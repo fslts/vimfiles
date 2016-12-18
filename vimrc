@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 " My Bundles
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
 Plugin 'moll/vim-node'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -67,12 +68,9 @@ set mouse=a
 " nicer buffer handling
 set hidden
 
-"save as spaces rather than tabs
-set expandtab
-" TODO use sauce plugin
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+" tabs vs spaces
+" golang
+au FileType python setl sw=8 sts=8 sw=8 et!
 
 " Set the tag file search order
 set tags=./tags;
