@@ -43,7 +43,11 @@ set autoindent
 let mapleader = ','
 
 set pastetoggle=<F2>
-set clipboard=unnamedplus
+if has("unix")
+    set clipboard=unnamedplus
+else
+    set clipboard=unnamed
+endif
 
 set t_Co=256
 
@@ -64,7 +68,6 @@ set scrolloff=5
 " completion in command mode
 set wildmenu
 
-set mouse=a
 " nicer buffer handling
 set hidden
 
