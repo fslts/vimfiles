@@ -87,7 +87,7 @@ autocmd CompleteDone * pclose
 
 " =================================
 
-let g:airline_theme='bubblegum'
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 
 let g:used_javascript_libs = 'angularjs, jquery'
